@@ -1,0 +1,96 @@
+/* تدرجات ألوان جميلة للخلفية */
+body {
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    direction: rtl;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* صندوق التحويل */
+.container {
+    width: 350px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    animation: slideUp 1s ease-in-out;
+}
+
+/* عنوان التطبيق */
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* إدخال البيانات والقوائم المنسدلة */
+input, select, button {
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* تأثير عند التركيز */
+input:focus, select:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+/* زر التحويل */
+button {
+    background: linear-gradient(90deg, #ff6f61, #ff9068);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* تأثير Hover للزر */
+button:hover {
+    background: linear-gradient(90deg, #ff9068, #ff6f61);
+    transform: scale(1.05);
+}
+
+/* عرض النتيجة */
+#result {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* الفوتر */
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #eee;
+}
+
+/* أنيميشن عند تحميل الصفحة */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
